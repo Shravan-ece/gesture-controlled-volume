@@ -24,9 +24,6 @@ maxVol=volume.GetVolumeRange()[1]
 
 print(f"- Volume range: {volume.GetVolumeRange()[0]} dB - {volume.GetVolumeRange()[1]} dB")
 
-
-
-
 while True:
     success, img=cap.read()
     flipf= cv.flip(img,1)
@@ -61,7 +58,6 @@ while True:
         end_time = time.time()
         seconds = end_time - start_time
         fps = num_frames / seconds  
-
         num_frames = 0
         start_time = time.time()
     
